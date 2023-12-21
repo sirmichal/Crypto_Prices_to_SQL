@@ -27,14 +27,16 @@ I have set in the headers all of the paramteres necessary to get the data which 
 
 Step 4: Establishing Connection to the SQL Database
 
-To seamlessly integrate the retrieved price data into the 'API_Crypto1' database, I utilized the Python library 'pyodbc'. This library established a connection to the SQL Server Express instance and enabled data exchange between the Python script and the database.
+To integrate the retrieved price data into the 'API_Crypto1' database, I utilized the Python library 'pyodbc'. This library established a connection to the SQL Server Express instance and enabled data exchange between the Python script and the database.
+
+<code from python connect to sql>
 
 Step 5: Storing Price Data in SQL Database
 
-To ensure the integrity and accessibility of the price data, I inserted the extracted data into a dedicated table named 'CryptoPrices' within the 'API_Crypto1' database.
+To ensure the integrity and accessibility of the price data, I inserted the extracted data into a previously created table named 'CryptoPrices' within the 'API_Crypto1' database. Whenever the data is successfully insert into the table I got the message 'Data inserted successfully".
 
-Step 6: Automating Price Data Updating
+<last code snippet>
 
-To maintain the currency price data's freshness, I scheduled the Python script to run periodically, refreshing the 'API_Crypto1' database every minute. This ensured that the database always held the most up-to-date cryptocurrency prices.
+Conclusions
 
-This project not only equipped me with the latest cryptocurrency market insights but also honed my Python programming, API interaction, database integration, and SQL database operations skills. It served as a testament to my data analysis prowess and my ability to automate data gathering and processing tasks.
+To maintain the currency price data's freshness, Python script can be scheduled to run periodically, refreshing the 'API_Crypto1' database within given timeframe. Saved data can be used later to feed different analytics tools such as PowerBI or Tabelau.
