@@ -129,6 +129,10 @@ pythontosqllocaldb.conn.close()
 
 print("Data inserted successfully.")
 ```
+And here is how the data looked in the table.
+
+<img width="400" alt="image" src="https://github.com/sirmichal/Crypto_Prices_to_SQL/blob/main/Price_Data.png?raw=true">
+
 
 ## Conclusions
 
